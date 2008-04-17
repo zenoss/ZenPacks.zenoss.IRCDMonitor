@@ -3,7 +3,7 @@
 # or saved.  Do not modify them directly here.
 NAME = 'ZenPacks.zenoss.IRCDMonitor'
 VERSION = '1.0'
-AUTHOR = ''
+AUTHOR = 'Zenoss'
 LICENSE = ''
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.zenoss']
 PACKAGES = ['ZenPacks', 'ZenPacks.zenoss', 'ZenPacks.zenoss.IRCDMonitor']
