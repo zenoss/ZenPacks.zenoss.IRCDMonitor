@@ -31,7 +31,7 @@ class IRCDMonitorDataSource(ZenPackPersistence,RRDDataSource.RRDDataSource):
     sourcetypes = (IRCD_MONITOR,)
     sourcetype = IRCD_MONITOR
 
-    eventClass = '/Cmd/Fail'
+    eventClass = '/Status/IRCD'
 
     hostname = '${dev/id}'
     port = 6667
