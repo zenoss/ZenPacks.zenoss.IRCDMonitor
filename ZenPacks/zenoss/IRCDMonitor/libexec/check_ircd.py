@@ -28,7 +28,7 @@ class ZenossIRCDPlugin:
         self.critical_num = critical_num
 
     def run(self):
-        check_ircd = Products.ZenUtils.Utils.zenPath('libexec','check_ircd')
+        check_ircd = Products.ZenUtils.Utils.binPath('check_ircd')
         parts = [check_ircd]
         if self.hostname:
             parts.append('-H %s' % self.hostname)
