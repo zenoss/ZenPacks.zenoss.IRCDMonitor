@@ -73,8 +73,12 @@ class IRCDMonitorDataSource(ZenPackPersistence,RRDDataSource.RRDDataSource):
 
     def getDescription(self):
         if self.sourcetype == self.IRCD_MONITOR:
-            return self.hostname + self.url
-        return RRDDataSource.RRDDataSource.getDescription(self)
+            hostname = getattr(self, 'hostname', '')
+            url = getattr(self, 'url', '')
+            description = hostname + url
+        else:
+            description = RRDDataSource.RRDDataSource.getDescription(self)
+        return description
 
 
     def useZenCommand(self):
