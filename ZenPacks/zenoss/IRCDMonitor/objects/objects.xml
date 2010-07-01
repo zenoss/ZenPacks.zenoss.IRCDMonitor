@@ -36,6 +36,9 @@ ${dev/id}
 </property>
 <tomanycont id='datapoints'>
 <object id='number' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property type="text" id="zendoc" mode="w" >
+Number of connections
+</property>
 <property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
 GAUGE
 </property>
