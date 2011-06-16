@@ -17,8 +17,8 @@ from Products.Zuul.utils import ZuulMessageFactory as _t
 
 class IIRCDMonitorDataSourceInfo(IRRDDataSourceInfo):
     cycletime = schema.Int(title=_t(u'Cycle Time (seconds)'))
-    hostname = schema.Text(title=_t(u'Host Name'),
-                           group=_t(u'IRC'))
+    hostname = schema.TextLine(title=_t(u'Host Name'),
+                               group=_t(u'IRC'))
     warning_num = schema.Int(title=_t(u'Warning Count'),
                              group=_t(u'IRC'))
     port = schema.Int(title=_t(u'Port'),
