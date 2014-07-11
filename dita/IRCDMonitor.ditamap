@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:map" "map.dtd">
+<map>
+   <title>IRCDMonitor</title>
+   <topicref href="topics/IRCDMonitor.dita">
+      <topicref href="topics/IRCDMonitor_ref-Prerequisites.dita"/>
+      <topicref href="topics/IRCDMonitor_task-Enable-Monitoring.dita"/>
+      <topicref href="topics/IRCDMonitor_ref-Daemons.dita"/>
+   </topicref>
+</map>

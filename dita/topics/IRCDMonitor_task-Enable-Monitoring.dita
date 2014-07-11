@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:task" "task.dtd">
+<task id="d35e66"><title>Enable Monitoring</title><taskbody><context><p>To enable monitoring:</p></context><steps-informal><ol>
+      <li>
+        <p>Select Infrastructure from the navigation bar.</p>
+      </li>
+
+      <li>
+        <p>Click the device name in the device list.</p>
+
+        <p>The device overview page appears.</p>
+      </li>
+
+      <li>
+        <p>Expand Monitoring Templates in the left panel, and then select
+        Device.</p>
+      </li>
+
+      <li>
+        <p>Select Bind Templates from the Action menu.</p>
+
+        <p>The Bind Templates dialog appears.</p>
+      </li>
+
+      <li>
+        <p>Move the IrcdMonitor template from the Available list and move it to the Selected
+            list.</p>
+      </li>
+
+      <li>
+        <p>Click <b>Save</b>.</p>
+
+        <p>The IrcdMonitor template is added.</p>
+      </li>
+
+      <li>
+        <p>Click the new template in the left panel and change options as
+        needed.</p>
+
+        <table>
+          <title>IRC Basic Data Source Options</title>
+
+          <tgroup cols="2">
+            <colspec colname="c1" colwidth="1*"/>
+            <colspec colname="c2" colwidth="4*"/>
+            <thead>
+              <row>
+                <entry>Option</entry>
+
+                <entry>Description</entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry><p>Port</p></entry>
+
+                <entry><p>Specifies the port to connect to the IRC server
+                (default 6667).</p></entry>
+              </row>
+
+              <row>
+                <entry><p>warning_num</p></entry>
+
+                <entry><p>Creates a warning event when this number of users
+                are seen.</p></entry>
+              </row>
+
+              <row>
+                <entry><p>critical_num</p></entry>
+
+                <entry><p>Creates a critical event when this number of
+                users are seen.</p></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </li>
+    </ol></steps-informal></taskbody></task>
